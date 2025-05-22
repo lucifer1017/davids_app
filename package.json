@@ -7,7 +7,8 @@
     "generate:ui": "tsx src/generate.ts ui",
     "dev": "nodemon",
     "start": "tsx src/index.ts",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "build": "npx tsc"
   },
   "dependencies": {
     "@llamaindex/openai": "^0.3.7",
