@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
     "generate": "tsx src/generate.ts datasource",
     "generate:datasource": "tsx src/generate.ts datasource",
