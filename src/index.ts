@@ -10,7 +10,7 @@ import { workflowFactory } from "./app/workflow";
 import { handleLogin } from './api/auth';
 
 // Configuration
-const MAIN_PORT = process.env.MAIN_PORT || 3000;
+const PORT = process.env.PORT || 3000;
 const LLAMA_PORT = process.env.LLAMA_PORT || 3001;
 
 // Initialize core systems
@@ -77,8 +77,8 @@ app.use((req, res, next) => {
 
     // Start main Express server
     app.use(apiProxy);
-    app.listen(MAIN_PORT, () => {
-      console.log(`Public server running on http://localhost:${MAIN_PORT}`);
+    app.listen(PORT, () => {
+      console.log(`Public server running on http://localhost:${PORT}`);
     });
   } catch (error) {
     console.error('Server startup failed:', error);
