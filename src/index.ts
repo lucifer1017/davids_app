@@ -152,7 +152,7 @@ app.use((req, res, next) => {
       uiConfig: {
         appTitle: "LlamaIndex App",
         componentsDir: "components",
-        devMode: true
+        devMode: false
       }
     }) ;
 
