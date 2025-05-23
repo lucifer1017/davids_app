@@ -8,7 +8,7 @@
     "dev": "nodemon",
     "postinstall": "patch-package",
     "build": "npx tsc && next build",
-    "start": "node dist/index.js"
+    "start": "tsx src/index.ts"
   },
   "dependencies": {
     "@llamaindex/openai": "^0.3.7",
