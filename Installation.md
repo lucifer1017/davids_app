@@ -7,3 +7,4 @@
 # Utilities Applied
 - Express Session
 - Patch-package
+- Http-proxy-middleware
