@@ -3,8 +3,8 @@ import "dotenv/config";
 import * as fs from "fs/promises";
 import { LLamaCloudFileService } from "llamaindex";
 import * as path from "path";
-import { getIndex } from "./app/data";
-import { initSettings } from "./app/settings";
+import { getIndex } from "./app/data.js";
+import { initSettings } from "./app/settings.js";
 
 dotenv.config();
 
