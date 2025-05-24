@@ -59,7 +59,7 @@ app.use((req, res, next) => {
     // Configure LlamaIndexServer port through environment
     process.env.PORT = LLAMA_PORT.toString();
     
-    const llamaServer = new LlamaIndexServer({
+    const llamaServer = new (LlamaIndexServer as any)({
       workflow: workflowFactory,
       uiConfig: {
         appTitle: "LlamaIndex App",
