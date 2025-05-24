@@ -61,10 +61,11 @@ app.use((req, res, next) => {
     // const appRootDirectory = 'dist';
     const llamaServer = new (LlamaIndexServer as any)({
       workflow: workflowFactory,
+      port: LLAMA_PORT,
       uiConfig: {
         appTitle: "LlamaIndex App",
         componentsDir: "components",
-        devMode: true
+        devMode: false
       },
       // dir: appRootDirectory //
 
