@@ -1,5 +1,5 @@
 import { agent } from "@llamaindex/workflow";
-import { getIndex } from "./data.js";
+import { getIndex } from "./data";
 
 export const workflowFactory = async (reqBody: any) => {
   const index = await getIndex(reqBody?.data);
