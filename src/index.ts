@@ -5,9 +5,9 @@ import path from 'path';
 import { createProxyMiddleware } from 'http-proxy-middleware';
 import { LlamaIndexServer } from "@llamaindex/server";
 import "dotenv/config";
-import { initSettings } from "./app/settings";
-import { workflowFactory } from "./app/workflow";
-import { handleLogin } from './api/auth';
+import { initSettings } from "./app/settings.js";
+import { workflowFactory } from "./app/workflow.js";
+import { handleLogin } from './api/auth.js';
 
 // Configuration
 const PORT = process.env.PORT || 3000;
