@@ -10,7 +10,7 @@
     "postinstall": "patch-package",
     "build-backend": "npx tsc",
     "build-frontend": "next build && ls -la .next/",
-    "build": "npm run build-backend && npm run build-frontend",
+    "build": "npm run build-backend && npm run build-frontend && echo '--- ls -la .next/ ---' && ls -la .next/ && echo '--- find .next/ ---' && find .next/ && echo '--- ls -la node_modules/@llamaindex/server/.next/ ---' && ls -la node_modules/@llamaindex/server/.next/ && echo '--- find node_modules/@llamaindex/server/.next/ ---' && find node_modules/@llamaindex/server/.next/",
     "start": "node dist/index.js"
   },
   "dependencies": {
