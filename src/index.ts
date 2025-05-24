@@ -58,7 +58,7 @@ app.use((req, res, next) => {
   try {
     // Configure LlamaIndexServer port through environment
     process.env.PORT = LLAMA_PORT.toString();
-    // const appRootDirectory = process.cwd(); 
+    // const appRootDirectory = 'dist';
     const llamaServer = new (LlamaIndexServer as any)({
       workflow: workflowFactory,
       uiConfig: {
@@ -66,7 +66,7 @@ app.use((req, res, next) => {
         componentsDir: "components",
         devMode: true
       },
-      // dir: appRootDirectory 
+      // dir: appRootDirectory //
 
     });
 
